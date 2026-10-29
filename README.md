@@ -1,5 +1,7 @@
 # Travel Estimator — explained budgets, live context
 
+**[Try the live Travel Estimator demo](https://sohaibijaz.dev/demos/travel/)** · [Case study](https://sohaibijaz.dev/projects/travel-cost-estimator/) · [Portfolio](https://sohaibijaz.dev)
+
 ![Modern Travel Estimator interface](https://raw.githubusercontent.com/sohaibijaz940/sohaib-engineering-portfolio/main/public/previews/travel.webp)
 
 A travel-planning project that grew from relational database coursework into a browser workspace. It makes the assumptions behind a trip budget inspectable. **It is not a reservation or payment service.**

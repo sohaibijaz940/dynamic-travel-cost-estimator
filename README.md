@@ -1,35 +1,33 @@
-# Dynamic Travel Cost Estimator ✈️
+# Travel Estimator — explained budgets, live context
 
-**Course Project:** Database Management Systems (BSCS)
-**Advisor:** Ma'am Hafiza Ayesha Nadeem[cite: 1]
+![Modern Travel Estimator interface](https://raw.githubusercontent.com/sohaibijaz940/sohaib-engineering-portfolio/main/public/previews/travel.webp)
 
-## 📌 Project Overview
-The Dynamic Travel Cost Estimator is a database-driven application designed to calculate travel costs dynamically based on distance, transportation type, and fuel efficiency[cite: 5]. It also assists users in selecting hotels based on pricing and ratings[cite: 5].
+A travel-planning project that grew from relational database coursework into a browser workspace. It makes the assumptions behind a trip budget inspectable. **It is not a reservation or payment service.**
 
-## ✨ Key Features
-* **Complex Data Modeling:** Implements a relational schema with 5 core entities: Users, TravelDetails, Hotels, Bookings, and PricingData[cite: 5].
-* **Advanced SQL Logic:** Includes custom **Views** for analytics and **Stored Procedures** for automated data handling[cite: 1].
-* **Referential Integrity:** Enforces strict Foreign Key constraints and data validation rules (e.g., Rating checks)[cite: 3].
-* **Relational Reporting:** Utilizes Inner, Left, and Right Joins to generate comprehensive user travel summaries[cite: 2].
+## Original foundation
 
-## 🛠️ Tech Stack
-* **Language:** C++[cite: 5]
-* **Database:** MySQL[cite: 5]
-* **API:** Google Maps API (for distance tracking)[cite: 5]
+The original `dynamic_travel_cost.sql`, coursework ZIP and ERD/report stay in this repository. The schema models Users, TravelDetails, Hotels, Bookings and PricingData. The modern edition is maintained in the shared portfolio repository rather than duplicating its Next.js server and shared components here.
 
-## 🚀 Setup Instructions
-1. Clone the repository.
-2. Ensure MySQL Server is running (e.g., via XAMPP Control Panel).
-3. Import the `/sql/database_setup.sql` file into MySQL Workbench.
-4. Execute the script to recreate the schema and sample data.
+## Modern demonstration
 
-## SCREENSHOTS
-<img width="511" height="593" alt="image" src="https://github.com/user-attachments/assets/946e2854-daf3-4eea-95f4-f8e5952e133a" />
-<img width="713" height="559" alt="image" src="https://github.com/user-attachments/assets/006e1afb-6f6f-44ae-9f54-dfc910935924" />
-<img width="629" height="576" alt="image" src="https://github.com/user-attachments/assets/5526c58b-5e7d-4724-ba48-635fb94b1e13" />
-<img width="831" height="468" alt="image" src="https://github.com/user-attachments/assets/6dc085b0-dc2c-4e8e-b00d-cb2dbd9f5d7c" />
-<img width="790" height="519" alt="image" src="https://github.com/user-attachments/assets/0e30e54b-5533-428e-b85b-4ba02217aaa3" />
-<img width="901" height="584" alt="image" src="https://github.com/user-attachments/assets/e1d5b3c7-7013-468f-a283-8a0201c181eb" />
+- Complete budget lines, user overrides, room capacity/date validation and a recalculated contingency.
+- Configured FlightAPI searches with supplied airline/leg details, session-owned quote selection, freshness checks and explicit currency/group assumptions.
+- Configured Places venue discovery and optional events; absent reviews/photos remain absent instead of being invented.
+- Private plans, membership-scoped group itineraries, expense splits and local planning tools.
+- Cinematic destination UI with mobile and reduced-motion support.
 
+Base costs and optional comparison scenarios are illustrative. Live provider coverage, fields, billing and quotas vary. The UI labels provider quotes separately from estimates; no hotel or flight is booked.
 
+## Inspect the original database
 
+Import the actual file `dynamic_travel_cost.sql` into a suitable MySQL environment. The old README's `/sql/database_setup.sql` path did not exist here; this documentation now points to the real file. Original screenshots remain in the historical README below.
+
+## Source and setup
+
+- [Complete modern source](https://github.com/sohaibijaz940/sohaib-engineering-portfolio)
+- [This project's modern page source](https://github.com/sohaibijaz940/sohaib-engineering-portfolio/tree/main/src/app/demos/travel/)
+- [Local setup, providers and verification](https://github.com/sohaibijaz940/sohaib-engineering-portfolio#run-locally)
+- [Engineering article source](https://github.com/sohaibijaz940/sohaib-engineering-portfolio/blob/main/src/content/writing/travel.mdx)
+- [Original README, preserved for historical context](docs/ORIGINAL_README.md)
+
+The portfolio is currently a local demonstration; a public hosted demo URL will be added after deployment. Links above open source code, not a hosted application. No localhost URL is presented as a public demo.
